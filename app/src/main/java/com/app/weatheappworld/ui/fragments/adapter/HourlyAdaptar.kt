@@ -50,7 +50,7 @@ class HourlyAdapter(var hoursList: ArrayList<Hourly>) : RecyclerView.Adapter<Hou
             calendar.add(Calendar.MILLISECOND, tz.getOffset(calendar.timeInMillis))
             val sdf = SimpleDateFormat("HH:mm a", Locale.getDefault())
             val currenTimeZone = (hourly.dt?.toLong())?.times(1000)?.let { it1 -> Date(it1) }
-            hourlyTime.text= sdf.format(currenTimeZone)+"Am".toString()
+            hourlyTime.text= sdf.format(currenTimeZone)
 
             hourlyTemp.text=(hourly.temp)?.toInt().toString()
             val icon=hourly.weather?.get(0)?.icon

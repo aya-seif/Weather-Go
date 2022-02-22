@@ -152,8 +152,9 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="81dp"
+            android:layout_height="85dp"
             android:layout_below="@+id/slash"
+            android:foregroundGravity="center"
             android:layout_centerVertical="true"
             android:layout_marginStart="30dp"
             android:layout_marginTop="-2dp"
